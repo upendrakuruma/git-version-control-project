@@ -12,7 +12,7 @@
 
 <body>
     <div class="container2">
-        <h1>Update Customer Detailes</h1>
+        <h1>Update Member</h1>
         <form action="{% url 'update' id=client.id %}" method="POST">{% csrf_token %}
             <label for="" name="first" required>First name</label><br><br>
             <input type="text" name="first_name" value="{{ client.first_name }}" required><br><br>
